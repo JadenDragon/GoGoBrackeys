@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ds327icexb504"]
+[gd_scene load_steps=6 format=3 uid="uid://ds327icexb504"]
 
 [ext_resource type="PackedScene" uid="uid://bxnu5itvpvvw7" path="res://Scenes/player.tscn" id="1_8t0wi"]
 [ext_resource type="Texture2D" uid="uid://dvj7ul45g7bpv" path="res://Assets/sprites/world_tileset.png" id="2_mm17s"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o6fsw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_baker"]
 texture = ExtResource("2_mm17s")
@@ -137,6 +139,10 @@ sources/0 = SubResource("TileSetAtlasSource_baker")
 zoom = Vector2(4, 4)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, -1)
+shape = SubResource("WorldBoundaryShape2D_o6fsw")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-4, -2)
