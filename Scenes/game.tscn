@@ -495,3 +495,30 @@ position = Vector2(79, -48)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 position = Vector2(1132.5, 187)
 shape = SubResource("RectangleShape2D_vw7pu")
+
+[node name="Coin2" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(853, 8)
+
+[node name="Coin3" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1145, 38)
+
+[node name="Coin4" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1476, -59)
+
+[node name="Coin5" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1523, -145)
+
+[node name="Coin6" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1237, -120)
+
+[node name="Coin7" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(2004, -91)
+
+[node name="Coin8" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1943, -7)
+
+[node name="Coin9" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(2086, -262)
+
+[node name="Coin10" parent="." instance=ExtResource("4_c8oqp")]
+position = Vector2(1909, -187)
